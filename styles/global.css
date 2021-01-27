@@ -18,12 +18,18 @@ html, body {
 }
 
 main {
-    padding: 5rem 0;
+    padding: 3rem 0 0 0;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 800px;
+}
+
+company {
+    font-weight: normal;
+    font-style: italic;
 }
 
 footer {
@@ -33,20 +39,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.title a {
-    color: #0070f3;
-    text-decoration: none;
-}
-
-.title a:hover, .title a:focus, .title a:active {
-    text-decoration: underline;
 }
 
 .title {
@@ -64,6 +56,14 @@ a {
     font-size: 1.5rem;
 }
 
+.aboutme {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    white-space: pre-wrap;
+}
+
 code {
     background: #fafafa;
     border-radius: 5px;
@@ -78,7 +78,8 @@ code {
     justify-content: center;
     flex-wrap: wrap;
     max-width: 800px;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .card {
@@ -122,4 +123,49 @@ code {
 
 ul {
     list-style-type: none;
+    width: 100%;
+    padding: 0;
+    white-space: pre-wrap;
+}
+
+hr {
+    margin-top: 30px;
+}
+
+date {
+    font-style: italic;
+    color: #999;
+    font-weight: normal;
+    font-size: 70%;
+}
+
+table {
+    width: 40%;
+}
+
+.plainlink {
+    text-decoration: none;
+}
+
+.plainlink:link, .plainlink:visited {
+    color: black;
+}
+
+.plainlink:hover, .plainlink:focus, .plainlink:active{
+    color: #0070f3;
+}
+
+img {
+    width: 40px;
+    margin: 20px;
+}
+
+.links {
+    float: left;
+}
+
+.credit {
+    position: relative;
+    display: inline;
+    float: none;
 }

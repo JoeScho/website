@@ -1,33 +1,7 @@
 import Head from 'next/head'
+import { workHistory } from '../data/work';
 
-const workHistory = [
-  {
-    company: 'CloudMargin (YLD)',
-    title: 'Team Lead / Software Engineer',
-    description: 'This is a description',
-    tech: [
-      'NodeJS',
-      'Typescript',
-      'ReactJS',
-      'AWS',
-      'CucumberJS'
-    ]
-  },
-  {
-    company: 'DAZN (YLD)',
-    title: 'Software Engineer',
-    description: 'This is a description',
-    tech: [
-      'NodeJS',
-      'Typescript',
-      'ReactJS',
-      'AWS',
-      'Terraform'
-    ]
-  }
-]
-
-export default function Home() {
+export default function Work() {
   return (
     <div className="container">
       <Head>
@@ -37,28 +11,20 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Work History
+          <a className="plainlink" href="/">&larr;</a> Work History
         </h1>
 
         <ul>
-          <hr/>
+          <hr />
           {
             workHistory.map(role => {
               return (
                 <li>
-                  <h3>{role.company}</h3>
-                  <h5>{role.title}</h5>
+                  <h3>{role.title} <company>/ {role.company}</company> <date>{role.date}</date></h3>
+
                   <p>{role.description}</p>
-                  <ul>
-                    {role.tech.map(tech => {
-                      return (
-                        <li>
-                          {tech}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                  <hr/>
+                  <strong>| {role.tech.map(tech => (`${tech} | `))}</strong>
+                  <hr />
                 </li>
               );
             })
