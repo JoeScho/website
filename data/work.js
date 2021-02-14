@@ -1,15 +1,17 @@
 export const workHistory = [
-  // Next client! Update when working there
-  // {
-  //   company: 'Alamy (YLD)',
-  //   title: 'Software Engineer',
-  //   date: 'Feb 2020 - Present',
-  //   description: ``,
-  //   tech: [
-  //     'Typescript',
-  //     'NextJS'
-  //   ]
-  // },
+  {
+    company: 'Alamy (YLD)',
+    title: 'Software Engineer',
+    date: 'Feb 2020 - Present',
+    description: ``,
+    tech: [
+      'Typescript',
+      'NextJS',
+      'NestJS',
+      'AWS',
+      'K8s'
+    ]
+  },
   {
     company: 'CloudMargin (YLD)',
     title: 'Team Lead',

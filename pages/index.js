@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import { getGreetings } from '../js/utils';
 
 export default function Home() {
+  const { header, subheader } = getGreetings();
   return (
     <div className="container">
       <Head>
@@ -10,11 +12,16 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Hi, I'm Joe.
+          {header}
         </h1>
 
         <p className="description">
-          I'm a <code>software engineer</code> 🧑‍💻
+          {subheader}
+        </p>
+
+        <p className="intro">
+          I'm Joe, a software engineer at <a className="plainlink" href="https://www.yld.io/" target="_blank" >YLD</a> 🧑‍💻
+          <br/>Passionate about open source, best practices, and environmental issues.
         </p>
 
         <div className="grid">
@@ -27,13 +34,6 @@ export default function Home() {
             <h3>Education &rarr;</h3>
             <p>Grades, subjects, and cheap noodles</p>
           </a>
-          <p className="card-full">
-{`With over four years of industry experience, I have a wealth of knowledge in many areas of product development including technical expertise, project management, colleague / client relationship building, team management, presenting, documenting, and improving communication between the product and development teams.
-
-I am passionate about best practices, delivering quality software, and ensuring everyone is having a great time whilst doing so.
-
-A company's attitude to environmental impact, diversity, and encouraging a healthy lifestyle (both physical and mental) is very important to me.`}
-          </p>
         </div>
       </main>
 
@@ -49,9 +49,7 @@ A company's attitude to environmental impact, diversity, and encouraging a healt
             <img src="/medium.png" alt="Medium" />
           </a>
         </div>
-        {/* <div className="credit">
-          Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </div> */}
+        {/* Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> */}
       </footer>
     </div>
   )

@@ -48,28 +48,19 @@ footer {
 }
 
 .title, .description {
-    text-align: center;
+    text-align: left;
 }
 
 .description {
     line-height: 1.5;
-    font-size: 1.5rem;
-}
-
-.aboutme {
-    line-height: 1.5;
     font-size: 1.2rem;
     margin-top: 0;
-    margin-bottom: 2rem;
-    white-space: pre-wrap;
 }
 
-code {
-    background: #fafafa;
-    border-radius: 5px;
-    padding: 0.75rem;
-    font-size: 1.1rem;
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+.intro {
+    padding-top: 50px;
+    line-height: 1.5;
+    font-size: 1.5rem;
 }
 
 .grid {
@@ -91,7 +82,7 @@ code {
     text-decoration: none;
     border: 1px solid #eaeaea;
     border-radius: 10px;
-    transition: color 0.15s ease, border-color 0.15s ease;
+    transition: color 0.6s ease, border-color 0.6s ease;
 }
 
 .card:hover, .card:focus, .card:active {
@@ -145,6 +136,7 @@ table {
 
 .plainlink {
     text-decoration: none;
+    transition: color 0.6s ease, border-color 0.6s ease;
 }
 
 .plainlink:link, .plainlink:visited {
@@ -162,10 +154,4 @@ img {
 
 .links {
     float: left;
-}
-
-.credit {
-    position: relative;
-    display: inline;
-    float: none;
 }
