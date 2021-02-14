@@ -1,22 +1,22 @@
-export const workHistory = [
+export default [
   {
     company: 'Alamy (YLD)',
     title: 'Software Engineer',
     date: 'Feb 2020 - Present',
-    description: ``,
+    description: '',
     tech: [
       'Typescript',
       'NextJS',
       'NestJS',
       'AWS',
-      'K8s'
-    ]
+      'K8s',
+    ],
   },
   {
     company: 'CloudMargin (YLD)',
     title: 'Team Lead',
     date: 'Feb 2019 - Feb 2020',
-    description: ``,
+    description: '',
     tech: [
       'NodeJS',
       'Typescript',
@@ -25,21 +25,21 @@ export const workHistory = [
       'CucumberJS',
       'TDD',
       'BDD',
-      'Scrum'
-    ]
+      'Scrum',
+    ],
   },
   {
     company: 'DAZN (YLD)',
     title: 'Software Engineer',
     date: 'November 2017 - Jan 2019',
-    description: ``,
+    description: '',
     tech: [
       'NodeJS',
       'Typescript',
       'ReactJS',
       'AWS',
-      'Terraform'
-    ]
+      'Terraform',
+    ],
   },
   {
     company: 'IBM',
@@ -56,7 +56,7 @@ Outside of my main role, I - along with a few colleagues - setup a team to creat
       'Chai',
       'Mocha',
       'IoT',
-      'TDD'
-    ]
-  }
+      'TDD',
+    ],
+  },
 ];

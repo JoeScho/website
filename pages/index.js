@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { getGreetings } from '../js/utils';
+import Head from 'next/head';
+import getGreetings from '../js/getGreetings';
 
 export default function Home() {
   const { header, subheader } = getGreetings();
@@ -52,5 +52,5 @@ export default function Home() {
         {/* Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> */}
       </footer>
     </div>
-  )
+  );
 }

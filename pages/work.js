@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { workHistory } from '../data/work';
+import Head from 'next/head';
+import workHistory from '../data/work';
 
 export default function Work() {
   return (
@@ -17,17 +17,15 @@ export default function Work() {
         <ul>
           <hr />
           {
-            workHistory.map(role => {
-              return (
+            workHistory.map((role) => (
                 <li>
                   <h3>{role.title} <company>/ {role.company}</company> <date>{role.date}</date></h3>
 
                   <p>{role.description}</p>
-                  <strong>| {role.tech.map(tech => (`${tech} | `))}</strong>
+                  <strong>| {role.tech.map((tech) => (`${tech} | `))}</strong>
                   <hr />
                 </li>
-              );
-            })
+            ))
           }
         </ul>
 
@@ -37,5 +35,5 @@ export default function Work() {
         Powered by Coffee
       </footer>
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { educationHistory } from '../data/education';
+import Head from 'next/head';
+import educationHistory from '../data/education';
 
 export default function Education() {
   return (
@@ -17,27 +17,28 @@ export default function Education() {
         <ul>
           <hr />
           {
-            educationHistory.map(education => {
-              return (
-                <li>
-                  <h3>{education.level} <company>/ {education.school}</company> <date>{education.date}</date></h3>
-                  <p>{education.description}</p>
-                  <table>
+            educationHistory.map((education) => (
+              <li key={education.school} >
+                <h3>{education.level}
+                  <company> / {education.school}</company>
+                  <date> {education.date}</date>
+                </h3>
+                <p>{education.description}</p>
+                <table>
+                  <tr>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                  </tr>
+                  {education.results.map((result) => (
                     <tr>
-                      <th>Subject</th>
-                      <th>Grade</th>
+                      <td>{result.subject}</td>
+                      <td>{result.grade}</td>
                     </tr>
-                    {education.results.map(result => (
-                      <tr>
-                        <td>{result.subject}</td>
-                        <td>{result.grade}</td>
-                      </tr>
-                    ))}
-                  </table>
-                  <hr />
-                </li>
-              );
-            })
+                  ))}
+                </table>
+                <hr />
+              </li>
+            ))
           }
         </ul>
 
@@ -47,5 +48,5 @@ export default function Education() {
         Powered by Coffee
       </footer>
     </div>
-  )
+  );
 }

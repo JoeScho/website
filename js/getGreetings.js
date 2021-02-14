@@ -1,14 +1,14 @@
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-export const getGreetings = () => {
+export default () => {
   const date = new Date();
   const hour = date.getHours();
   const day = date.getDay();
   let timeOfDay;
 
-  if (hour <=6) timeOfDay = 'night'
-  else if (6 < hour && hour < 12) timeOfDay = 'morning';
-  else if (hour < 18) timeOfDay = 'afternoon'
+  if (hour <= 6) timeOfDay = 'night';
+  else if (hour > 6 && hour < 12) timeOfDay = 'morning';
+  else if (hour < 18) timeOfDay = 'afternoon';
   else timeOfDay = 'evening';
 
   const header = `Good ${timeOfDay}!`;
@@ -16,5 +16,3 @@ export const getGreetings = () => {
 
   return { header, subheader };
 };
-
-module.exports = { getGreetings };
