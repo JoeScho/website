@@ -18,7 +18,7 @@ export default function Work() {
           <hr />
           {
             workHistory.map((role) => (
-                <li>
+                <li key={role.title}>
                   <h3>{role.title} <company>/ {role.company}</company> <date>{role.date}</date></h3>
 
                   <p>{role.description}</p>

@@ -25,12 +25,12 @@ export default function Education() {
                 </h3>
                 <p>{education.description}</p>
                 <table>
-                  <tr>
+                  <tr key='headers'>
                     <th>Subject</th>
                     <th>Grade</th>
                   </tr>
                   {education.results.map((result) => (
-                    <tr>
+                    <tr key={result.subject}>
                       <td>{result.subject}</td>
                       <td>{result.grade}</td>
                     </tr>
