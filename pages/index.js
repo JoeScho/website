@@ -21,7 +21,7 @@ export default function Home() {
         </p>
 
         <p className="intro">
-          I'm Joe, a software engineer at <a className="plainlink" href="https://www.yld.io/" target="_blank" >YLD</a> 🧑‍💻
+          I'm Joe, a software engineer at <strong><a className="plainlink" href="https://www.yld.io/" target="_blank" >YLD</a></strong> 🧑‍💻
           <br/>Passionate about open source, best practices, and environmental issues.
         </p>
 

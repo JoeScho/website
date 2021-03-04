@@ -14,7 +14,7 @@ export default function Education() {
           <a className="plainlink" href="/">&larr;</a> Education History
         </h1>
 
-        <ul>
+        <ul className="entry">
           <hr />
           {
             educationHistory.map((education) => (
@@ -23,7 +23,11 @@ export default function Education() {
                   <company> / {education.school}</company>
                   <date> {education.date}</date>
                 </h3>
-                <p>{education.description}</p>
+                <ul className="entrydescription">
+                  {education.description.map(
+                    (description) => <li key={description}>{description}</li>,
+                  )}
+                </ul>
                 <table>
                   <tr key='headers'>
                     <th>Subject</th>
