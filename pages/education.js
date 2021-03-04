@@ -43,10 +43,6 @@ export default function Education() {
         </ul>
 
       </main>
-
-      <footer>
-        Powered by Coffee
-      </footer>
     </div>
   );
 }

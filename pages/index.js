@@ -8,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Joe Schofield</title>
         <link rel="icon" href="/js.ico" />
+        <script src="https://kit.fontawesome.com/d9a14fbd57.js" crossOrigin="anonymous"></script>
       </Head>
 
       <main>
@@ -36,21 +37,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <footer>
-        <div className="links">
-          <a href="https://www.linkedin.com/in/joescho/" target="_blank" >
-            <img src="/linkedin.png" alt="LinkedIn" />
-          </a>
-          <a href="https://github.com/JoeScho" target="_blank" >
-            <img src="/github.png" alt="GitHub" />
-          </a>
-          <a href="https://medium.com/@joescho" target="_blank" >
-            <img src="/medium.png" alt="Medium" />
-          </a>
-        </div>
-        {/* Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> */}
-      </footer>
     </div>
   );
 }

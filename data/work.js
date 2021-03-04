@@ -1,9 +1,14 @@
 export default [
   {
-    company: 'Alamy (YLD)',
+    company: 'Alamy (via YLD)',
     title: 'Software Engineer',
     date: 'Feb 2020 - Present',
-    description: '',
+    description: [
+      'Implementing best practises within a junior / mid level team(both technologically and in methodology)',
+      'Creating TypeScript microservices (and template service) using NestJS',
+      'Creating a frontend (and template frontend) using NextJS'
+    ],
+    link: 'https://www.alamy.com/',
     tech: [
       'Typescript',
       'NextJS',
@@ -13,10 +18,16 @@ export default [
     ],
   },
   {
-    company: 'CloudMargin (YLD)',
+    company: 'CloudMargin (via YLD)',
     title: 'Team Lead',
-    date: 'Feb 2019 - Feb 2020',
-    description: '',
+    date: 'Feb 2019 - Jan 2020',
+    description: [
+      'Rebuilding C# monolith in TypeScript microservice architecture',
+      'Leading a team of 7 engineers',
+      'Taking on the role of scrum master in addition to regular duties - hosting various ceremonies and removing blockers facing the team',
+      'Creating a dashboard on the main website using React with Redux',
+    ],
+    link: 'https://cloudmargin.com/',
     tech: [
       'NodeJS',
       'Typescript',
@@ -29,27 +40,68 @@ export default [
     ],
   },
   {
-    company: 'DAZN (YLD)',
+    company: 'DAZN (via YLD)',
     title: 'Software Engineer',
-    date: 'November 2017 - Jan 2019',
-    description: '',
+    date: 'Nov 2017 - Jan 2019',
+    description: [
+      'Rebuilding a Java monolith in NodeJS & TypeScript microservice architecture',
+      'Creating and maintaining Terraform IaC to deploy service infrastructure including ECS, EC2, API Gateway, DynamoDB, IAM, Lambda, CloudFront, and CloudFormation',
+      'Creating and maintaining a CI pipeline using DroneCI',
+      'Load testing services using Artillery - my team and I created a geo-location service which was capable of over 20k rps',
+    ],
+    link: 'https://www.dazn.com/',
     tech: [
       'NodeJS',
       'Typescript',
       'ReactJS',
       'AWS',
       'Terraform',
+      'DroneCI',
+    ],
+  },
+  {
+    company: 'Kingfisher (via YLD)',
+    title: 'Software Engineer',
+    date: 'Jun 2017 - Oct 2017',
+    description: [
+      'Building a testing framework for an API using Chai & Mocha (JS frameworks)',
+    ],
+    link: 'https://www.kingfisher.com/en/index.html',
+    tech: [
+      'NodeJS',
+      'Chai',
+      'Mocha',
+      'Integration testing',
+    ],
+  },
+  {
+    company: 'YLD',
+    title: 'Software Engineer',
+    date: 'Jun 2017 - Present',
+    description: [
+      'Building strong client relationships, which contributed to two client engagements being extended multiple times',
+      'Line managing two individuals - this involved setting SMART goals, giving career guidance, mental health support',
+      'Assisting with the company’s social presence including talking at meetups and writing blog posts',
+      'Created the YLD green team to evaluate our environmental impact',
+    ],
+    link: 'https://www.yld.io/',
+    tech: [
+      'Line managing',
+      'Presenting',
+      'Blogging',
+      'Problem solving',
     ],
   },
   {
     company: 'IBM',
     title: 'Software Engineer Intern',
     date: 'August 2015 - August 2016',
-    description: `Here I initially worked with a team developing the widely used industry product, including IBM Integration Bus. This was a monolith system which has been in development for 20 years!
-
-After 6 months, I proceeded to join another team in which I created fully unit and integration tested microservices - following TDD practise - for a (then) new product, IBM App Connect.
-
-Outside of my main role, I - along with a few colleagues - setup a team to create a new project to equip the Grade II* listed Hursley House with IoT equipment which was to be used as a client showcase - and created a great working relationship with the device supplier`,
+    description: [
+      'Here I initially worked with a team developing the widely used industry product, including IBM Integration Bus. This was a monolith system which has been in development for 20 years!',
+      'After 6 months, I proceeded to join another team in which I created fully unit and integration tested microservices - following TDD practise - for a (then) new product, IBM App Connect.',
+      'Outside of my main role, I - along with a few colleagues - setup a team to create a new project to equip the Grade II* listed Hursley House with IoT equipment which was to be used as a client showcase - and created a great working relationship with the device supplier',
+    ],
+    link: 'https://www.ibm.com/uk-en',
     tech: [
       'NodeJS',
       'Java',

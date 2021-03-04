@@ -5,7 +5,9 @@ export default [
     date: 'September 2013 - August 2017',
     description: `Received First Class with Honours, including 100% in several areas.
 
-Also received an award for Outstanding Achievement in an Undergraduate Degree!`,
+Also received an award for Outstanding Achievement in an Undergraduate Degree.
+
+For my dissertation project I created PatientTrack - two android applications using the Ionic framework, these enabled carers of people with dementia to track the person, obtain more information, and enabled simple navigation home for the user.`,
     results: [
       {
         subject: 'Year 1 GPA',
