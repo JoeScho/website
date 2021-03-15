@@ -154,15 +154,26 @@ img {
 
 .links {
     float: left;
+    flex-direction: row;
+}
+
+.footer-icon-left {
+    float: left;
+    margin: 10px;
+    width: 50px;
+    color: black;
+    text-align: left;
 }
 
 .footer-icon {
+    float: right;
+    width: 50px;
     margin: 10px;
     color: black;
     text-align: left;
 }
 
-svg, .footer-icon, .links {
+svg, .footer-icon, .footer-icon-left, .links {
     background-color: rgba(0, 0, 0, 0);
 }
 

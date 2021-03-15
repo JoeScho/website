@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
 
       <footer>
         <div className="links">
-          <a className="footer-icon" href="https://www.linkedin.com/in/joescho/" target="_blank" >
+          <a className="footer-icon-left" href="https://www.linkedin.com/in/joescho/" target="_blank" >
             <FontAwesomeIcon icon={faLinkedin} size="3x" />
           </a>
           <a className="footer-icon" href="https://github.com/JoeScho" target="_blank" >
