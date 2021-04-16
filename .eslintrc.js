@@ -16,4 +16,14 @@ module.exports = {
   rules: {
     'no-unused-vars': 0,
   },
+  overrides: [
+    {
+      files: [
+        '**/__tests__/*.js',
+      ],
+      env: {
+        jest: true,
+      },
+    },
+  ],
 };
