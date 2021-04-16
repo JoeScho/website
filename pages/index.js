@@ -1,9 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 import getGreetings from '../js/getGreetings';
+import workHistory from '../data/work';
 
 export default function Home() {
   const { header, subheader } = getGreetings();
+  const { company, title } = workHistory[0];
+
   return (
     <div className="container">
       <Head>
@@ -22,7 +25,7 @@ export default function Home() {
         </p>
 
         <p className="intro">
-          I'm Joe, a software engineer at <strong><a className="plainlink" href="https://www.yld.io/" target="_blank" >YLD</a></strong> 🧑‍💻
+          I'm Joe, a {title} at <strong>{company}</strong> 🧑‍💻
           <br/>Passionate about open source, best practices, and environmental issues.
         </p>
 
