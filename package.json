@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "test": "jest .",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
@@ -38,7 +37,6 @@
     "react-test-renderer": "^17.0.1"
   },
   "precommit": [
-    "npm t",
     "npm run lint"
   ]
 }
