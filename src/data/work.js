@@ -4,7 +4,7 @@ export default [
     title: 'Software Engineer',
     date: 'Feb 2020 - Present',
     description: [
-      'Implementing best practises within a junior / mid level team(both technologically and in methodology)',
+      'Implementing best practises within a junior / mid level team (both technologically and in methodology)',
       'Creating TypeScript microservices (and template service) using NestJS',
       'Creating a frontend (and template frontend) using NextJS',
     ],
@@ -95,7 +95,7 @@ export default [
   {
     company: 'IBM',
     title: 'Software Engineer Intern',
-    date: 'August 2015 - August 2016',
+    date: 'Aug 2015 - Aug 2016',
     description: [
       'Here I initially worked with a team developing the widely used industry product, including IBM Integration Bus. This was a monolith system which has been in development for 20 years!',
       'After 6 months, I proceeded to join another team in which I created fully unit and integration tested microservices - following TDD practise - for a (then) new product, IBM App Connect.',

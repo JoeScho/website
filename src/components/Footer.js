@@ -24,7 +24,7 @@ const Footer = () => {
       <Link href="https://medium.com/@joescho" target="_blank" >
         <FontAwesomeIcon icon={faMedium} size="3x" />
       </Link>
-      <Switch onChange={toggleColorMode} defaultChecked={colorMode} />
+      <Switch position='absolute' right='5%' onChange={toggleColorMode} checked={colorMode === 'light'} />
     </Flex>
   );
 };
