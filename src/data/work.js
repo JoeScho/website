@@ -6,7 +6,7 @@ export default [
     description: [
       'Implementing best practises within a junior / mid level team(both technologically and in methodology)',
       'Creating TypeScript microservices (and template service) using NestJS',
-      'Creating a frontend (and template frontend) using NextJS'
+      'Creating a frontend (and template frontend) using NextJS',
     ],
     link: 'https://www.alamy.com/',
     tech: [
