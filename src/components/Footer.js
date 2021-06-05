@@ -36,17 +36,14 @@ const Footer = () => {
         />
       </a>
       <Box position='absolute' right='2%'>
+
         <IconButton
-          icon={<FontAwesomeIcon icon={faMoon} />}
+          icon={colorMode === 'light'
+            ? <FontAwesomeIcon icon={faSun} />
+            : <FontAwesomeIcon icon={faMoon} />
+          }
           backgroundColor={footerBackground}
-        />
-        <Switch
-          onChange={toggleColorMode}
-          checked={colorMode === 'light'}
-        />
-        <IconButton
-          icon={<FontAwesomeIcon icon={faSun} />}
-          backgroundColor={footerBackground}
+          onClick={toggleColorMode}
         />
       </Box>
     </Flex>

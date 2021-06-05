@@ -22,7 +22,7 @@ export default function Work() {
     <Flex height='90vh' alignItems='center' justifyContent='center' flexDirection='column'>
       <HeadingWithBackButton title='Work History' />
 
-      <Accordion width="60%" allowToggle>
+      <Accordion width="60%" mb={30} allowToggle>
         {
           workHistory.map((role) => (
             <AccordionItem>
