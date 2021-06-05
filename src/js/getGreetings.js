@@ -8,7 +8,7 @@ const getGreetings = () => {
   const day = date.getDay();
   let timeOfDay;
 
-  if (hour <= 6 && hour >= 21) timeOfDay = 'night';
+  if (hour <= 6 || hour >= 21) timeOfDay = 'night';
   else if (hour > 6 && hour < 12) timeOfDay = 'morning';
   else if (hour < 18) timeOfDay = 'afternoon';
   else timeOfDay = 'evening';

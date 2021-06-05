@@ -1,53 +1,72 @@
 import React from 'react';
-import Head from 'next/head';
+import {
+  Flex,
+  UnorderedList,
+  ListItem,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Tag,
+  Box,
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+} from '@chakra-ui/react';
 import educationHistory from '../data/education';
+import HeadingWithBackButton from '../components/HeadingWithBackButton';
 
-export default function Education() {
+export default function Work() {
   return (
-    <div className="container">
-      <Head>
-        <title>Joe Schofield</title>
-        <link rel="icon" href="/js.ico" />
-      </Head>
+    <Flex height='90vh' alignItems='center' justifyContent='center' flexDirection='column'>
+      <HeadingWithBackButton title='Education History' />
 
-      <main>
-        <h1 className="title">
-          <a className="plainlink" href="/">&larr;</a> Education History
-        </h1>
+      <Accordion width="60%" allowToggle>
+        {
+          educationHistory.map((education) => (
+            <AccordionItem key={education.level}>
+              <h2>
+                <AccordionButton>
+                  <Box flex="1" textAlign="left">
+                    <strong>{education.level}</strong> @ {education.school}
+                  </Box>
+                  <Tag marginLeft='auto'>{education.date}</Tag>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
 
-        <ul className="entry">
-          <hr />
-          {
-            educationHistory.map((education) => (
-              <li key={education.school} >
-                <h3>{education.level}
-                  <company> / {education.school}</company>
-                  <date> {education.date}</date>
-                </h3>
-                <ul className="entrydescription">
+              <AccordionPanel pb={4}>
+                <UnorderedList>
                   {education.description.map(
-                    (description) => <li key={description}>{description}</li>,
+                    (description) => <ListItem key={description}>{description}</ListItem>,
                   )}
-                </ul>
-                <table>
-                  <tr key='headers'>
-                    <th>Subject</th>
-                    <th>Grade</th>
-                  </tr>
-                  {education.results.map((result) => (
-                    <tr key={result.subject}>
-                      <td>{result.subject}</td>
-                      <td>{result.grade}</td>
-                    </tr>
-                  ))}
-                </table>
-                <hr />
-              </li>
-            ))
-          }
-        </ul>
+                </UnorderedList>
 
-      </main>
-    </div>
+                <Table size='sm'>
+                  <Thead>
+                    <Tr>
+                      <Th>Subject</Th>
+                      <Th>Grade</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    {education.results.map((result) => (
+                      <Tr key={result.subject}>
+                        <Td>{result.subject}</Td>
+                        <Td>{result.grade}</Td>
+                      </Tr>
+                    ))}
+                  </Tbody>
+                </Table>
+              </AccordionPanel>
+            </AccordionItem>
+          ))
+        }
+      </Accordion>
+    </Flex>
   );
 }

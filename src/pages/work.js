@@ -25,9 +25,9 @@ export default function Work() {
       <Accordion width="60%" allowToggle>
         {
           workHistory.map((role) => (
-            <AccordionItem key={role.title}>
+            <AccordionItem>
               <h2>
-                <AccordionButton>
+                <AccordionButton key={role.title}>
                   <Box flex="1" textAlign="left">
                     <strong>{role.title}</strong> @ {role.company}
                   </Box>
