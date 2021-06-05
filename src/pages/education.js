@@ -22,10 +22,10 @@ import HeadingWithBackButton from '../components/HeadingWithBackButton';
 
 export default function Work() {
   return (
-    <Flex minH='90vh' alignItems='center' justifyContent='center' flexDirection='column'>
+    <Flex minH='90vh' mx="5%" alignItems='center' justifyContent='center' flexDirection='column'>
       <HeadingWithBackButton title='Education History' />
 
-      <Accordion width="60%" mb={30} allowToggle>
+      <Accordion minWidth="60%" mb={30} allowToggle>
         {
           educationHistory.map((education) => (
             <AccordionItem key={education.level}>

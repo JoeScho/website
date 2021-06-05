@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   Flex,
   Box,
-  Switch,
   IconButton,
   useColorMode,
   useColorModeValue,

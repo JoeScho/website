@@ -19,10 +19,10 @@ export default function Work() {
   const tagHoverBackground = useColorModeValue('gray.300', 'gray.500');
 
   return (
-    <Flex height='90vh' alignItems='center' justifyContent='center' flexDirection='column'>
+    <Flex minHeight='90vh' mx="5%" alignItems='center' justifyContent='center' flexDirection='column'>
       <HeadingWithBackButton title='Work History' />
 
-      <Accordion width="60%" mb={30} allowToggle>
+      <Accordion minWidth="60%" mb={30} allowToggle>
         {
           workHistory.map((role) => (
             <AccordionItem>
