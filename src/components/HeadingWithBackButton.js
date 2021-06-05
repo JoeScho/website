@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Heading, IconButton, useColorModeValue } from '@chakra-ui/react';
 
 const HeadingWithBackButton = ({ title }) => {
-  const buttonBackground = useColorModeValue('gray.100', 'gray.700');
+  const buttonBackground = useColorModeValue('white', 'gray.700');
 
   return (
-    <Heading mb='60px'>
+    <Heading my='30px'>
       <a href="/" style={{ marginRight: 20 }}>
         <IconButton
           icon={<FontAwesomeIcon icon={faBackward} />}

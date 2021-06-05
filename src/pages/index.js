@@ -11,27 +11,22 @@ export default function Home() {
   const { company, title } = workHistory[0];
 
   return (
-    <Flex height='90vh' mx='5%' alignItems='center' justifyContent='center'>
-      <main>
-        <Heading size='3xl'>
-          {header}
-        </Heading>
+    <Flex minHeight='90vh' mx='5%' alignItems='center' justifyContent='center' flexDirection='column'>
+      <Heading mt="30px" size='3xl'>
+        {header}
+      </Heading>
 
-        <Text fontSize='xl' mb={6}>
-          {subheader}
-        </Text>
+      <Text fontSize='xl' mb={6}>
+        {subheader}
+      </Text>
 
-        <Text>I'm Joe, a {title} at <strong>{company}</strong> 🧑‍💻</Text>
-        <Text>Passionate about open source, best practices, and mental health.</Text>
+      <Text>I'm Joe, a {title} at <strong>{company}</strong> 🧑‍💻</Text>
+      <Text>Passionate about open source, best practices, and mental health.</Text>
 
-        <Flex justifyContent='space-between' mt={8}>
-          <Card href='/work' heading='Work History' body="Check out what I've been up to since I graduated" />
-          <Card href='/education' heading='Education' body='Grades, subjects, and cheap noodles' />
-        </Flex>
-        <Flex justifyContent='space-between' mt={6}>
-          <Card href='/portfolio' heading='Portfolio' body="I learn by making things, here's what I've made" />
-        </Flex>
-      </main>
+      <Flex justifyContent='space-between' my={8}>
+        <Card href='/work' heading='Work History' body="Check out what I've been up to since I graduated" />
+        <Card href='/education' heading='Education' body='Grades, subjects, and cheap noodles' />
+      </Flex>
     </Flex >
   );
 }

@@ -2,7 +2,7 @@ export default [
   {
     school: 'MHFA England',
     level: 'Mental Health Awareness Course',
-    date: 'February 2021',
+    date: 'Feb 2021',
     description: [
       'Provides a better understanding of the plethora of mental health issues that people can suffer from',
       'Introduction to how to handle a mental health crisis, and next steps to take',
@@ -19,7 +19,7 @@ export default [
   {
     school: 'University of Greenwich',
     level: 'Computing Degree',
-    date: 'September 2013 - August 2017',
+    date: 'Sep 2013 - Aug 2017',
     description: [
       'Received First Class with Honours, including 100% in several areas.',
       'Also received an award for Outstanding Achievement in an Undergraduate Degree.',
@@ -47,7 +47,7 @@ export default [
   {
     school: 'Budehaven Community School',
     level: 'A Levels',
-    date: 'September 2010 - August 2012',
+    date: 'Sep 2010 - Aug 2012',
     description: [],
     results: [
       {
@@ -67,7 +67,7 @@ export default [
   {
     school: 'Budehaven Community School',
     level: 'GCSEs',
-    date: 'September 2005 - August 2010',
+    date: 'Sep 2005 - Aug 2010',
     description: [],
     results: [
       {
