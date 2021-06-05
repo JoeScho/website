@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
     <ChakraProvider>
       <Head>
         <title>Joe Schofield</title>
-        <link rel="icon" href="/js.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <script src="https://kit.fontawesome.com/d9a14fbd57.js" crossOrigin="anonymous"></script>
       </Head>
       <Component {...pageProps} />
