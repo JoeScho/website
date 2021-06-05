@@ -21,7 +21,15 @@ const Card = ({ href, heading, body }) => {
       }}
     >
       <Heading size='md' mb={2}>{heading}</Heading>
-      <Text>{body}</Text>
+      <Text
+        sx={{
+          '@media only screen and (max-width: 600px)': {
+            'font-size': '12px',
+          },
+        }}
+      >
+        {body}
+      </Text>
     </Link>
   );
 };

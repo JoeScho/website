@@ -24,7 +24,7 @@ export default function Home() {
       <Text>Passionate about open source, best practices, and mental health.</Text>
 
       <Flex justifyContent='space-between' my={8}>
-        <Card href='/work' heading='Work History' body="Check out what I've been up to since I graduated" />
+        <Card href='/work' heading='Career' body="Check out what I've been up to since I graduated" />
         <Card href='/education' heading='Education' body='Grades, subjects, and cheap noodles' />
       </Flex>
     </Flex >
