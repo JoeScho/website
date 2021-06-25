@@ -1,6 +1,23 @@
 export default [
   {
     school: 'MHFA England',
+    level: 'Mental Health First Aid Course',
+    date: 'Mar 2021',
+    description: [
+      'First Aid for handling mental health crises',
+      'Help with signposting for further help',
+      'Grounding techniques for people in a crisis',
+      'Mental health in the workplace',
+    ],
+    results: [
+      {
+        subject: 'Two day course',
+        grade: 'Pass',
+      },
+    ],
+  },
+  {
+    school: 'MHFA England',
     level: 'Mental Health Awareness Course',
     date: 'Feb 2021',
     description: [
@@ -91,7 +108,7 @@ export default [
         grade: 'B',
       },
       {
-        subject: 'Phsyics',
+        subject: 'Physics',
         grade: 'B',
       },
       {
