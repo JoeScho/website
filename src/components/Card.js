@@ -24,7 +24,7 @@ const Card = ({ href, heading, body }) => {
       <Text
         sx={{
           '@media only screen and (max-width: 600px)': {
-            'font-size': '12px',
+            fontSize: '12px',
           },
         }}
       >

@@ -34,7 +34,7 @@ export default function Work() {
       >
         {
           workHistory.map((role) => (
-            <AccordionItem>
+            <AccordionItem key={role.title}>
               <h2>
                 <AccordionButton key={role.title}>
                   <Box flex="1" textAlign="left" mr={5}>
@@ -68,6 +68,7 @@ export default function Work() {
                     _hover={{
                       backgroundColor: tagHoverBackground,
                     }}
+                    key={tech}
                   >{tech}</Tag>,
                 )}
               </AccordionPanel>
