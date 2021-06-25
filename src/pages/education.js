@@ -64,7 +64,7 @@ export default function Work() {
                   )}
                 </UnorderedList>
 
-                <Table size='sm'>
+                <Table mt='5' size='sm'>
                   <Thead>
                     <Tr>
                       <Th>Subject</Th>

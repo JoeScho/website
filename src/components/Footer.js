@@ -38,11 +38,12 @@ const Footer = () => {
 
         <IconButton
           icon={colorMode === 'light'
-            ? <FontAwesomeIcon icon={faSun} />
-            : <FontAwesomeIcon icon={faMoon} />
+            ? <FontAwesomeIcon icon={faSun} size="1x" />
+            : <FontAwesomeIcon icon={faMoon} size="1x" />
           }
           backgroundColor={footerBackground}
           onClick={toggleColorMode}
+          size="md"
         />
       </Box>
     </Flex>
