@@ -1,14 +1,22 @@
 export default [
   {
+    company: 'Dunelm',
+    title: 'Software Engineer',
+    date: 'Sep 2021 - Present',
+    description: [
+      'tbc',
+    ],
+    tech: [],
+  },
+  {
     company: 'Alamy (via YLD)',
     title: 'Software Engineer',
-    date: 'Feb 2020 - Present',
+    date: 'Feb 2021 - Aug 2021',
     description: [
       'Implementing best practises within a junior / mid level team (both technologically and in methodology)',
       'Creating TypeScript microservices (and template service) using NestJS',
       'Creating a frontend (and template frontend) using NextJS',
     ],
-    link: 'https://www.alamy.com/',
     tech: [
       'Typescript',
       'NextJS',
@@ -20,14 +28,13 @@ export default [
   {
     company: 'CloudMargin (via YLD)',
     title: 'Team Lead',
-    date: 'Feb 2019 - Jan 2020',
+    date: 'Feb 2020 - Jan 2021',
     description: [
       'Rebuilding C# monolith in TypeScript microservice architecture',
       'Leading a team of 7 engineers',
       'Taking on the role of scrum master in addition to regular duties - hosting various ceremonies and removing blockers facing the team',
       'Creating a dashboard on the main website using React with Redux',
     ],
-    link: 'https://cloudmargin.com/',
     tech: [
       'NodeJS',
       'Typescript',
@@ -42,14 +49,13 @@ export default [
   {
     company: 'DAZN (via YLD)',
     title: 'Software Engineer',
-    date: 'Nov 2017 - Jan 2019',
+    date: 'Nov 2017 - Jan 2020',
     description: [
       'Rebuilding a Java monolith in NodeJS & TypeScript microservice architecture',
       'Creating and maintaining Terraform IaC to deploy service infrastructure including ECS, EC2, API Gateway, DynamoDB, IAM, Lambda, CloudFront, and CloudFormation',
       'Creating and maintaining a CI pipeline using DroneCI',
       'Load testing services using Artillery - my team and I created a geo-location service which was capable of over 20k rps',
     ],
-    link: 'https://www.dazn.com/',
     tech: [
       'NodeJS',
       'Typescript',
@@ -66,7 +72,6 @@ export default [
     description: [
       'Building a testing framework for an API using Chai & Mocha (JS frameworks)',
     ],
-    link: 'https://www.kingfisher.com/en/index.html',
     tech: [
       'NodeJS',
       'Chai',
@@ -77,14 +82,13 @@ export default [
   {
     company: 'YLD',
     title: 'Software Engineer',
-    date: 'Jun 2017 - Present',
+    date: 'Jun 2017 - Aug 2021',
     description: [
       'Building strong client relationships, which contributed to two client engagements being extended multiple times',
       'Line managing two individuals - this involved setting SMART goals, giving career guidance, mental health support',
       'Assisting with the company’s social presence including talking at meetups and writing blog posts',
       'Created the YLD green team to evaluate our environmental impact',
     ],
-    link: 'https://www.yld.io/',
     tech: [
       'Line managing',
       'Presenting',
@@ -101,7 +105,6 @@ export default [
       'After 6 months, I proceeded to join another team in which I created fully unit and integration tested microservices - following TDD practise - for a (then) new product, IBM App Connect.',
       'Outside of my main role, I - along with a few colleagues - setup a team to create a new project to equip the Grade II* listed Hursley House with IoT equipment which was to be used as a client showcase - and created a great working relationship with the device supplier',
     ],
-    link: 'https://www.ibm.com/uk-en',
     tech: [
       'NodeJS',
       'Java',
