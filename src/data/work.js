@@ -1,13 +1,13 @@
 export default [
-  {
-    company: 'Dunelm',
-    title: 'Software Engineer',
-    date: 'Sep 2021 - Present',
-    description: [
-      'tbc',
-    ],
-    tech: [],
-  },
+  // {
+  //   company: 'Dunelm',
+  //   title: 'Software Engineer',
+  //   date: 'Sep 2021 - Present',
+  //   description: [
+  //     'tbc',
+  //   ],
+  //   tech: [],
+  // },
   {
     company: 'Alamy (via YLD)',
     title: 'Software Engineer',
