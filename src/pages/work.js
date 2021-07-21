@@ -23,13 +23,17 @@ export default function Work() {
 
   const [searchTags, setSearchTags] = React.useState([]);
 
+  const addTag = (tag) => {
+    if (!searchTags.includes(tag)) {
+      setSearchTags([...searchTags, tag]);
+    }
+  };
+
   const handleSubmit = (event) => {
     if (event.keyCode === 13) {
       const { value } = event.target;
 
-      if (!searchTags.includes(value)) {
-        setSearchTags([...searchTags, event.target.value]);
-      }
+      addTag(value);
 
       // eslint-disable-next-line no-param-reassign
       event.target.value = '';
@@ -146,6 +150,7 @@ export default function Work() {
                     }}
                     key={tech}
                     backgroundColor={searchTags.includes(tech) ? tagHoverBackground : ''}
+                    onClick={() => addTag(tech)}
                   >
                     {tech}
                     {searchTags.includes(tech) && <TagCloseButton onClick={() => removeTag(tech)} />}
