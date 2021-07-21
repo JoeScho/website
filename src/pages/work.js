@@ -45,6 +45,7 @@ export default function Work() {
       {searchTags.map(
         (tech) => <Tag
           mx={1}
+          mb={2}
           _hover={{
             backgroundColor: tagHoverBackground,
           }}
@@ -84,14 +85,17 @@ export default function Work() {
     <Flex minHeight='90vh' mx="5%" alignItems='center' justifyContent='center' flexDirection='column'>
       <HeadingWithBackButton title='Work History' />
 
-      {renderTags()}
-      <Input
-        width="60%"
-        variant="flushed"
-        placeholder={searchTags.length ? '' : "Search for technologies I've used. E.g. 'NodeJS'"}
-        onKeyDown={handleSubmit}
-        mb={6}
-      />
+      <Flex width="60%" borderBottom="1px" mb={6}>
+        {renderTags()}
+        <Input
+          width="100%"
+          variant="unstyled"
+          placeholder={searchTags.length ? '' : "Search for technologies I've used. E.g. 'NodeJS'"}
+          onKeyDown={handleSubmit}
+          mb={2}
+          ml={1}
+        />
+      </Flex>
 
       <Accordion
         width="60%"
