@@ -31,12 +31,18 @@ export default function Work() {
 
   const handleSubmit = (event) => {
     if (event.keyCode === 13) {
+      // Enter key
       const { value } = event.target;
 
       addTag(value);
 
       // eslint-disable-next-line no-param-reassign
       event.target.value = '';
+    } else if (event.keyCode === 8) {
+      // Backspace key
+      if (!event.target.value || event.target.value === '') {
+        setSearchTags(searchTags.slice(0, searchTags.length - 1));
+      }
     }
   };
 
