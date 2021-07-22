@@ -15,13 +15,19 @@ import {
   Input,
   TagCloseButton,
 } from '@chakra-ui/react';
+import { matchSorter } from 'match-sorter';
 import workHistory from '../data/work';
 import HeadingWithBackButton from '../components/HeadingWithBackButton';
+
+const autocompleteOpts = [];
+workHistory.map((role) => autocompleteOpts.push(...role.tech));
+const autocompleteOptions = [...new Set(autocompleteOpts)];
 
 export default function Work() {
   const tagHoverBackground = useColorModeValue('gray.300', 'gray.500');
 
   const [searchTags, setSearchTags] = React.useState([]);
+  const [matches, setMatches] = React.useState([]);
 
   const addTag = (tag) => {
     if (!searchTags.includes(tag)) {
@@ -30,20 +36,25 @@ export default function Work() {
   };
 
   const handleSubmit = (event) => {
+    const { value } = event.target;
+
     if (event.keyCode === 13) {
-      // Enter key
-      const { value } = event.target;
-
       addTag(value);
-
       // eslint-disable-next-line no-param-reassign
       event.target.value = '';
-    } else if (event.keyCode === 8) {
-      // Backspace key
-      if (!event.target.value || event.target.value === '') {
-        setSearchTags(searchTags.slice(0, searchTags.length - 1));
-      }
     }
+
+    if (event.keyCode === 8 && (!value || value === '')) {
+      setSearchTags(searchTags.slice(0, searchTags.length - 1));
+    }
+  };
+
+  const handleChange = (event) => {
+    const { value } = event.target;
+    // eslint-disable-next-line no-unused-expressions
+    value.length > 1
+      ? setMatches(matchSorter(autocompleteOptions, value))
+      : setMatches([]);
   };
 
   const removeTag = (tag) => {
@@ -91,20 +102,40 @@ export default function Work() {
     return selectedIndexes;
   };
 
+  const clearInputField = () => {
+    document.getElementById('user-input').value = '';
+  };
+
   return (
     <Flex minHeight='90vh' mx="5%" alignItems='center' justifyContent='center' flexDirection='column'>
       <HeadingWithBackButton title='Work History' />
 
-      <Flex width="60%" borderBottom="1px" mb={6}>
+      <Flex width="60%" borderBottom="1px" mb={6} flexDirection="row">
         {renderTags()}
         <Input
+          id="user-input"
           width="100%"
           variant="unstyled"
           placeholder={searchTags.length ? '' : "Search for technologies I've used. E.g. 'NodeJS'"}
           onKeyDown={handleSubmit}
+          onChange={handleChange}
           mb={2}
           ml={1}
         />
+        {matches.length > 0 && matches.map((match) => <Tag
+          mx={1}
+          mb={2}
+          flex={1}
+          _hover={{
+            backgroundColor: tagHoverBackground,
+          }}
+          key={match}
+          onClick={() => {
+            addTag(match);
+            setMatches([]);
+            clearInputField();
+          }}
+        >{match}</Tag>)}
       </Flex>
 
       <Accordion
