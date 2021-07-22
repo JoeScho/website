@@ -38,12 +38,6 @@ export default function Work() {
   const handleSubmit = (event) => {
     const { value } = event.target;
 
-    if (event.keyCode === 13) {
-      addTag(value);
-      // eslint-disable-next-line no-param-reassign
-      event.target.value = '';
-    }
-
     if (event.keyCode === 8 && (!value || value === '')) {
       setSearchTags(searchTags.slice(0, searchTags.length - 1));
     }
@@ -66,6 +60,7 @@ export default function Work() {
       {searchTags.map(
         (tech) => <Tag
           mx={1}
+          py={1}
           mb={2}
           _hover={{
             backgroundColor: tagHoverBackground,
@@ -110,7 +105,7 @@ export default function Work() {
     <Flex minHeight='90vh' mx="5%" alignItems='center' justifyContent='center' flexDirection='column'>
       <HeadingWithBackButton title='Work History' />
 
-      <Flex width="60%" borderBottom="1px" mb={6} flexDirection="row">
+      <Flex width="60%" borderBottom="1px" mb={2} flexDirection="row">
         {renderTags()}
         <Input
           id="user-input"
@@ -122,10 +117,11 @@ export default function Work() {
           mb={2}
           ml={1}
         />
+      </Flex>
+      <Flex width="60%" mb={2} flexDirection="row">
         {matches.length > 0 && matches.map((match) => <Tag
           mx={1}
           mb={2}
-          flex={1}
           _hover={{
             backgroundColor: tagHoverBackground,
           }}
