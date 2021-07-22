@@ -179,15 +179,15 @@ export default function Work() {
               </h2>
 
               <AccordionPanel pb={4}>
-                <UnorderedList>
+                <UnorderedList mb={4}>
                   {role.description.map(
                     (description) => <ListItem key={description}>{description}</ListItem>,
                   )}
                 </UnorderedList>
                 {role.tech.map(
                   (tech) => <Tag
-                    mt={6}
                     mx={1}
+                    mb={2}
                     _hover={{
                       backgroundColor: tagHoverBackground,
                     }}
