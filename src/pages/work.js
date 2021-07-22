@@ -105,7 +105,17 @@ export default function Work() {
     <Flex minHeight='90vh' mx="5%" alignItems='center' justifyContent='center' flexDirection='column'>
       <HeadingWithBackButton title='Work History' />
 
-      <Flex width="60%" borderBottom="1px" mb={2} flexDirection="row">
+      <Flex
+        width="60%"
+        borderBottom="1px"
+        mb={2}
+        flexDirection="row"
+        sx={{
+          '@media only screen and (max-width: 600px)': {
+            width: '90%',
+          },
+        }}
+      >
         {renderTags()}
         <Input
           id="user-input"
