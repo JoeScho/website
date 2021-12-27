@@ -16,12 +16,10 @@ import {
   TagCloseButton,
 } from '@chakra-ui/react';
 import { matchSorter } from 'match-sorter';
-import workHistory from '../data/work';
+import workHistory, { tech as autocompleteOpts } from '../data/work';
 import HeadingWithBackButton from '../components/HeadingWithBackButton';
 
-const autocompleteOpts = [];
-workHistory.map((role) => autocompleteOpts.push(...role.tech));
-const autocompleteOptions = [...new Set(autocompleteOpts)];
+const autocompleteOptions = [...new Set(Object.values(autocompleteOpts))];
 
 export default function Work() {
   const tagHoverBackground = useColorModeValue('gray.300', 'gray.500');
@@ -62,6 +60,7 @@ export default function Work() {
           mx={1}
           py={1}
           mb={2}
+          cursor='pointer'
           _hover={{
             backgroundColor: tagHoverBackground,
           }}
@@ -132,6 +131,7 @@ export default function Work() {
         {matches.length > 0 && matches.map((match) => <Tag
           mx={1}
           mb={2}
+          cursor='pointer'
           _hover={{
             backgroundColor: tagHoverBackground,
           }}
@@ -188,6 +188,7 @@ export default function Work() {
                   (tech) => <Tag
                     mx={1}
                     mb={2}
+                    cursor='pointer'
                     _hover={{
                       backgroundColor: tagHoverBackground,
                     }}
