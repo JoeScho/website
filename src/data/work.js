@@ -42,12 +42,39 @@ export const tech = {
 export default [
   {
     company: 'Dunelm',
-    title: 'Software Engineer',
-    date: 'Sep 2021 - Present',
+    title: 'Tech Lead',
+    date: 'Feb 2023 - Present',
     description: [
-      'Improving stability and developing features for in-store Mobile Point of Sale (MPOS) systems',
-      'Integrating with third party applications for enhanced search functionality within dunelm.com',
-      'Continuing my mission to improve unexplained acronyms, documentation, and best practices (get in touch to hear what I believe these are!)',
+      'Led the migration of a monolithic frontend application to a microfrontend architecture, providing technical guidance and ensuring alignment with project goals.',
+      'Collaborated with diverse teams to gather and document requirements for microfrontend components, facilitating seamless integration and contributions.',
+      'Proactively addressed technical challenges, developed innovative solutions, and improved project clarity to enhance productivity and code quality.',
+    ],
+    tech: [
+      tech.AGILE,
+      tech.AWS,
+      tech.CONFLUENCE,
+      tech.GIT,
+      tech.GITLAB,
+      tech.INTEGRATION,
+      tech.JENKINS,
+      tech.JEST,
+      tech.JIRA,
+      tech.NODEJS,
+      tech.REACTJS,
+      tech.SERVERLESS,
+      tech.SCRUM,
+      tech.TDD,
+      tech.TYPESCRIPT,
+    ],
+  },
+  {
+    company: 'Dunelm',
+    title: 'Software Engineer',
+    date: 'Sep 2021 - Jan 2023',
+    description: [
+      'Played a pivotal role in elevating the stability and functionality of in-store Mobile Point of Sale (MPOS) systems while actively contributing to feature development.',
+      'Orchestrated the seamless integration of third-party applications, significantly enhancing the search capabilities of dunelm.com, and improving user experience.',
+      'Demonstrated a commitment to clarity and knowledge-sharing by actively working to demystify acronyms, enhance documentation, and promote industry best practices. Feel free to connect for insights into my initiatives in this regard!',
     ],
     tech: [
       tech.AGILE,
@@ -72,9 +99,9 @@ export default [
     title: 'Software Engineer',
     date: 'Feb 2021 - Aug 2021',
     description: [
-      'Implementing best practices within a junior / mid level team (both technologically and in methodology)',
-      'Creating TypeScript microservices (and template service) using NestJS',
-      'Creating a frontend (and template frontend) using NextJS',
+      'Established and enforced industry best practices within junior and mid-level teams, fostering excellence in both technological implementations and methodology.',
+      'Led the design and development of TypeScript microservices, including the creation of a template service, leveraging the NestJS framework to ensure robust, scalable, and maintainable backend solutions.',
+      'Pioneered the construction of cutting-edge frontend applications, incorporating a template frontend, utilizing the NextJS framework to deliver performant, user-centric web experiences.',
     ],
     tech: [
       tech.AGILE,
@@ -106,10 +133,10 @@ export default [
     title: 'Team Lead',
     date: 'Feb 2020 - Jan 2021',
     description: [
-      'Rebuilding C# monolith in TypeScript microservice architecture',
-      'Leading a team of 7 engineers',
-      'Taking on the role of scrum master in addition to regular duties - hosting various ceremonies and removing blockers facing the team',
-      'Creating a dashboard on the main website using React with Redux',
+      'Spearheaded the strategic transition from a C# monolithic system to a scalable TypeScript microservice architecture, optimizing performance, and flexibility.',
+      'Provided effective leadership and mentorship to a team of 7 engineers, fostering a collaborative environment and driving project success.',
+      "Assumed the pivotal role of Scrum Master, orchestrating essential ceremonies and actively removing obstacles to ensure the team's productivity and the timely delivery of projects.",
+      'Designed and implemented a feature-rich dashboard within the main website, employing React with Redux to enhance user experience and provide valuable insights.',
     ],
     tech: [
       tech.AGILE,
@@ -135,10 +162,10 @@ export default [
     title: 'Software Engineer',
     date: 'Nov 2017 - Jan 2020',
     description: [
-      'Rebuilding a Java monolith in NodeJS & TypeScript microservice architecture',
-      'Creating and maintaining Terraform IaC to deploy service infrastructure including ECS, EC2, API Gateway, DynamoDB, IAM, Lambda, CloudFront, and CloudFormation',
-      'Creating and maintaining a CI pipeline using DroneCI',
-      'Load testing services using Artillery - my team and I created a geo-location service which was capable of over 20k rps',
+      'Collaborated on the strategic shift from a Java monolithic system to a modern, efficient NodeJS & TypeScript microservice architecture, ensuring enhanced performance and scalability.',
+      'Designed and meticulously maintained Terraform Infrastructure as Code (IaC) to orchestrate the deployment of service infrastructure, encompassing ECS, EC2, API Gateway, DynamoDB, IAM, Lambda, CloudFront, and CloudFormation.',
+      'Contributed to the creation and maintenance of a robust Continuous Integration (CI) pipeline utilizing DroneCI, streamlining development workflows and ensuring consistent code quality.',
+      'Collaborated with my team to develop and conduct rigorous load testing on services, culminating in the creation of a high-performing geo-location service capable of sustaining over 20,000 requests per second (rps).',
     ],
     tech: [
       tech.AGILE,
@@ -170,7 +197,7 @@ export default [
     title: 'Software Engineer',
     date: 'Jun 2017 - Oct 2017',
     description: [
-      'Building a testing framework for an API using Chai & Mocha (JS frameworks)',
+      'Contributed to the development of a robust API testing framework utilizing industry-standard JavaScript frameworks Chai and Mocha, facilitating comprehensive testing and quality assurance procedures.',
     ],
     tech: [
       tech.CHAI,
@@ -188,10 +215,10 @@ export default [
     title: 'Software Engineer',
     date: 'Jun 2017 - Aug 2021',
     description: [
-      'Building strong client relationships, which contributed to two client engagements being extended multiple times',
-      'Line managing two individuals - this involved setting SMART goals, giving career guidance, mental health support',
-      'Assisting with the company’s social presence including talking at meetups and writing blog posts',
-      'Created the YLD green team to evaluate our environmental impact',
+      'Cultivated and nurtured enduring client partnerships, resulting in the extension of two client engagements on multiple occasions, demonstrating commitment to client satisfaction and project success.',
+      'Successfully served as a line manager for two individuals, which encompassed establishing SMART goals, providing career guidance, and offering valuable mental health support, fostering professional growth and well-being within the team.',
+      "Played an active role in enhancing the company's digital footprint by participating as a speaker at industry meetups and crafting informative blog posts, elevating the organization's thought leadership and industry influence.",
+      "Spearheaded the creation of the YLD Green Team, dedicated to evaluating and improving the company's environmental impact, showcasing dedication to sustainability and corporate responsibility.",
     ],
     tech: [
       tech.AGILE,
@@ -238,9 +265,9 @@ export default [
     title: 'Software Engineer Intern',
     date: 'Aug 2015 - Aug 2016',
     description: [
-      'Here I initially worked with a team developing the widely used industry product, including IBM Integration Bus. This was a monolith system which has been in development for 20 years!',
-      'After 6 months, I proceeded to join another team in which I created fully unit and integration tested microservices - following TDD practise - for a (then) new product, IBM App Connect.',
-      'Outside of my main role, I - along with a few colleagues - setup a team to create a new project to equip the Grade II* listed Hursley House with IoT equipment which was to be used as a client showcase - and created a great working relationship with the device supplier',
+      'Initiated my tenure by contributing to a cross-functional team dedicated to the development of an industry-standard product, which included IBM Integration Bus. This formidable monolithic system had been in continuous development for two decades, providing me with valuable insights into legacy systems.',
+      "Transitioned to a different team after six months, where I excelled in the creation of meticulously tested microservices, following a Test-Driven Development (TDD) approach, for the groundbreaking IBM App Connect product. This contribution was pivotal to the product's success.",
+      'Beyond my core responsibilities, I co-founded an initiative with colleagues to establish a dedicated team focused on the deployment of IoT equipment at the Grade II* listed Hursley House. This project served as a compelling client showcase and fostered a productive partnership with the device supplier, underscoring my ability to drive innovative and collaborative ventures.',
     ],
     tech: [
       tech.AGILE,
